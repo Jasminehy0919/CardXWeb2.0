@@ -3,8 +3,6 @@ body {
   height: 100vh;
   /* cursor:url("https://i.stack.imgur.com/KDrS2.png"),auto; */
   cursor: url("../images/redx-logo-30.png"), auto;
-
-
 }
 
 h1 {
@@ -12,24 +10,25 @@ h1 {
   letter-spacing: 45px;
   font-size: 45px;
 }
-
+.cursor{
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
 #title {
   padding: 2% 5%;
   text-align: left;
   background-image: url("../images/title-background-B.jpg");
-    /* background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url("../images/title-background-B.jpeg"); */
-
-
+  /* background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url("../images/title-background-B.jpeg"); */
   background-size: cover;
   padding-bottom: 150px;
   padding-top: 100px;
+
 }
-.title-background{
+
+.title-background {
   width: 100%;
   z-index: -5;
-
 }
-
 
 .navbar-brand {
   width: 12%;
@@ -64,15 +63,10 @@ h1 {
   height: 135px;
 }
 
-
-
 .iphoneScreen {
-
-  width:450px;
+  width: 450px;
   position: absolute;
-
   right: 60%;
-
 }
 
 .shake_effect {
@@ -85,7 +79,6 @@ h1 {
   padding: 50px;
   position: relative;
   width: 100%;
-
 }
 
 .feature-logo {
@@ -117,15 +110,19 @@ h1 {
   padding: 200px 50px;
   z-index: -5;
 }
-.intro-image{
-  width:800px;
+
+.intro-image {
+  width: 800px;
 }
+
 .intro-left, .intro-right {
   font-size: 50px;
 }
-.intro-left{
+
+.intro-left {
   padding-top: 200px;
 }
+
 .intro-desc-left, .intro-desc-right {
   font-size: 20px;
 }
@@ -133,46 +130,42 @@ h1 {
 .intro-left, .intro-desc-left {
   text-align: left;
   padding-left: 5%;
-
 }
 
 .intro-right, .intro-desc-right {
   text-align: right;
   padding-right: 5%;
-
 }
 
-.intro-left-section{
+.intro-left-section {
   padding-top: 150px;
 }
-.intro-right-section{
+
+.intro-right-section {
   padding-top: 420px;
-
 }
 
-.intro-right-image{
-    opacity: 0.3;
-    right: 2px;
-    align-content: right;
-    position: absolute;
-    z-index: 5;
-    top: 2300px;
-    height: 496px;
-
-
+.intro-right-image {
+  opacity: 0.3;
+  right: 2px;
+  align-content: right;
+  position: absolute;
+  z-index: 5;
+  top: 2300px;
+  height: 496px;
 }
 
-.intro-left-image{
+.intro-left-image {
   /* transform:rotate(-20deg); */
   margin-top: 200px;
   opacity: 0.3;
   align-content: left;
   margin-left: -50px;
-position: absolute;
+  position: absolute;
   z-index: 5;
   top: 1500px;
-
 }
+
 #intro, #about-us, #follow-us, #contact-us, #footer {
   background-color: #000000;
 }
@@ -205,6 +198,7 @@ position: absolute;
   font-size: 20px;
   line-height: 193.5%;
 }
+
 .ab-bkg {
   opacity: 0.3;
   right: 2px;
@@ -213,8 +207,9 @@ position: absolute;
   z-index: 5;
   top: 3100px;
   height: 50%;
-  width:50%;
+  width: 50%;
 }
+
 #contact-us {
   padding: 50px;
 }
@@ -259,11 +254,9 @@ position: absolute;
 .st-cu {
   display: block;
   margin-bottom: 80px;
-}
-
-.st-cu {
   text-align: left;
   letter-spacing: 50px;
+
 }
 
 #follow-us {
@@ -386,95 +379,42 @@ position: absolute;
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* .fullpage
-{
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 5em;
-}
-
-.container-test
-{
-  position: fixed;
-  width: 110vw;
-  height: 110vh;
-  left: -5vw;
-  top: -5vh;
-  z-index: -1;
-  background: #ff0;
-}  */
-
-.curtain-image{
+.curtain-image {
   width: 75%;
 }
 
 .curtain {
-  height: 589px;
-  height:100vh;
+  height: 500px;
+  height: 100vh;
   position: relative;
   z-index: 2;
-
   background-image: url("../images/curtain-image.png");
   background-size: cover;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
-    padding-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.main{
-  position: fixed;
-  bottom:0;
-  height: 450px;
+.main {
+  position: sticky;
+  bottom: 0;
+  height: 500px;
   width: 100%;
-
 }
 
-.reveal-main{
-  height: 400px;
-
+.reveal-main {
+  height: 1px;
 }
-
 
 .active {
-  position:relative;
- /* margin-top:-111px;*/
-  margin-top:-50%;
-  margin-top:-50px;
-  height:900px;
+  position: sticky;
+  margin-top: -100%;
+  margin-top: -1px;
+  height: 900px;
 }
 
 .activetwo {
+  position: relative;
 
-  position:absolute;
 }
